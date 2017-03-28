@@ -18,7 +18,7 @@ function git_short_sha() {
 
 function prompt() {
     local return_status=""
-    local ruby="${red}$(ruby_version_prompt)${reset_color}"
+    #local ruby="${red}$(ruby_version_prompt)${reset_color}"
     local user_host="${cyan}\h${reset_color}"
     local current_path="\w"
     local n_commands="\!"
