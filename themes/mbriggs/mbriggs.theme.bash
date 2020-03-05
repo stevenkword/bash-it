@@ -23,7 +23,7 @@ function prompt() {
     local current_path="\w"
     local n_commands="\!"
     local git_branch="$(git_short_sha)$(scm_prompt_info)"
-    local prompt_symbol='λ'
+    local prompt_symbol='⛅'
     local open='('
     local close=')'
     local prompt_char=' \$ '
