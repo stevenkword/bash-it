@@ -9,7 +9,7 @@ SCM_THEME_PROMPT_AHEAD="${red}!${reset_color}"
 SCM_THEME_PROMPT_CLEAN="${green}✓${reset_color}"
 SCM_THEME_PROMPT_PREFIX=" "
 SCM_THEME_PROMPT_SUFFIX=""
-GIT_SHA_PREFIX=" ${yellow}"
+GIT_SHA_PREFIX=" ${orange}"
 GIT_SHA_SUFFIX="${reset_color}"
 
 function git_short_sha() {
@@ -19,7 +19,7 @@ function git_short_sha() {
 function prompt() {
     local return_status=""
     local ruby="${red}$(ruby_version_prompt)${reset_color}"
-    local user_host="${green}\h${reset_color}"
+    local user_host="${cyan}\h${reset_color}"
     local current_path="\w"
     local n_commands="\!"
     local git_branch="$(git_short_sha)$(scm_prompt_info)"
